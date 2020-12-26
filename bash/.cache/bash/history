@@ -1,0 +1,3 @@
+la
+ls -alh
+rm .bash_history 
