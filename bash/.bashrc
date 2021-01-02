@@ -103,3 +103,8 @@ export PS1="\n\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;2m\]\u@\h\[$(tput sgr0
 # Enables the functionaltiy of Vi within bash.
 set -o vi
 
+# Auto "cd" when entering just a path
+shopt -s autocd
+
+# Source .profile
+source ~/.profile
