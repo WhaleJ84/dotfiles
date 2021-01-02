@@ -36,6 +36,20 @@ alias :wq='exit'
 alias :Wq='exit'
 alias vi="$EDITOR"
 
+c (){
+    # if a directory, go to and show contents
+    if [ -d "$1" ]; then
+        cd "$1"
+        la
+    # if nothing is given, go home
+    elif [ -z "$1" ]; then
+        cd "$HOME"
+    # if it's nothing or a file, edit it
+    else
+        vi "$1"
+    fi
+}
+
 # ========== [ other ] ========== #
 
 xrandr --output DP2 --mode 3440x1440 --left-of LVDS1
