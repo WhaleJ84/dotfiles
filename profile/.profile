@@ -50,7 +50,3 @@ c (){
     fi
 }
 
-# ========== [ other ] ========== #
-
-xrandr --output DP2 --mode 3440x1440 --left-of LVDS1
-
